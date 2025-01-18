@@ -1,4 +1,6 @@
-Project Description: Weather App using Go
+Project Description: 
+
+Weather App using Go
 This is my first project using the Go programming language. It is a simple weather application that allows users to check the current weather for a specific city by using the OpenWeatherMap API. The project demonstrates how to interact with an external API, process user input from an HTML form, and dynamically display the results on a web page.
 
 Features:
