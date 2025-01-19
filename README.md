@@ -22,7 +22,7 @@ The retrieved weather information (e.g., temperature, weather condition) is disp
 
 How to Run the Project:
 Clone the repository:
-git clone [https://github.com/your-username/your-repository.git](https://github.com/Aidoni0797/iDONi_and_Go_project/)
+git clone (https://github.com/Aidoni0797/iDONi_and_Go_project)
 cd your-repository
 
 Set up your OpenWeatherMap API key:
