@@ -1,3 +1,5 @@
+Link my first project with Go: https://idoni-and-go-project.fly.dev/
+
 Project Description: 
 
 Weather App using Go
