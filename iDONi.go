@@ -112,53 +112,30 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 		<style>
 			body {
 				font-family: Arial, sans-serif;
-				background-color: #f0f8ff;
 				margin: 0;
-				padding: 15px;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				height: 100vh;
-			}
-			.container {
-				background-color: white;
-				padding: 20px;
-				border-radius: 10px;
-				box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-				width: 400px;
+				padding: 0;
+				background: #f0f8ff;;
+				color: #1E90FF;
 				text-align: center;
 			}
-			h2 {
-				color: #1E90FF;
+			.container {
+				padding: 20px;
 			}
-			input[type="text"] {
-				padding: 10px;
-				width: 80%;
-				margin: 10px 0;
-				border: 1px solid #ccc;
-				border-radius: 5px;
-				font-size: 16px;
-			}
-			input[type="submit"] {
-				padding: 10px 20px;
-				background-color: #1E90FF;
-				border: none;
-				color: white;
-				font-size: 16px;
-				border-radius: 5px;
-				cursor: pointer;
-			}
-			input[type="submit"]:hover {
-				background-color: #45a049;
-			}
-			#weatherResult {
-				margin-top: 20px;
-				padding: 10px;
-				background-color: #f1f1f1;
-				border-radius: 5px;
+			.card {
+				background-color: rgba(255, 255, 255, 0.1);
+				border-radius: 10px;
+				padding: 20px;
+				
 				display: inline-block;
-				min-width: 100%;
-				word-wrap: break-word;
+				max-width: 90%!;(string=Semey)
+				width: 300px;
+			}
+			h1 {
+				font-size: 2rem;
+				margin-bottom: 20px;
+			}
+			p {
+				font-size: 1.2rem;
 			}
 		</style>
       <body>
