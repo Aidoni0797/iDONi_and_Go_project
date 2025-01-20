@@ -56,6 +56,7 @@ func weatherHandler(w http.ResponseWriter, r *http.Request) {
 func homeHandler(w http.ResponseWriter, r *http.Request) {
 	html := `
     <html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
 			body {
 				font-family: Arial, sans-serif;
