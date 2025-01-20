@@ -62,7 +62,7 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 				font-family: Arial, sans-serif;
 				background-color: #f0f8ff;
 				margin: 0;
-				padding: 0;
+				padding: 15px;
 				display: flex;
 				justify-content: center;
 				align-items: center;
