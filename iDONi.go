@@ -50,7 +50,59 @@ func weatherHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	fmt.Fprintf(w, "The temperature in %s is %.2f°C\n", weather.Name, weather.Main.Temp)
+	// Формируем HTML-ответ с использованием CSS
+	response := fmt.Sprintf(`
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Weather</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+				background: linear-gradient(to bottom, #87CEFA, #4682B4);
+				color: #fff;
+				text-align: center;
+			}
+			.container {
+				padding: 20px;
+			}
+			.card {
+				background-color: rgba(255, 255, 255, 0.1);
+				border-radius: 10px;
+				padding: 20px;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+				display: inline-block;
+				max-width: 90%;
+				width: 300px;
+			}
+			h1 {
+				font-size: 2rem;
+				margin-bottom: 20px;
+			}
+			p {
+				font-size: 1.2rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="card">
+				<h1>Weather in %s</h1>
+				<p>The temperature is %.2f°C</p>
+			</div>
+		</div>
+	</body>
+	</html>
+	`, weather.Name, weather.Main.Temp)
+
+	// Устанавливаем Content-Type для HTML-ответа
+	w.Header().Set("Content-Type", "text/html")
+	w.WriteHeader(http.StatusOK)
+	w.Write([]byte(response))
 }
 
 func homeHandler(w http.ResponseWriter, r *http.Request) {
