@@ -1,6 +1,7 @@
-Trial link ended, why?
 
-Link my first project with Go: https://idoni-and-go-project.fly.dev/
+
+Link my first project with Go: https://idoniandgoproject-production.up.railway.app/
+
 
 Project Description: 
 
