@@ -87,6 +87,7 @@ func weatherHandler(w http.ResponseWriter, r *http.Request) {
 				font-size: 1.2rem;
 			}
 		</style>
+  		<script src="ipapi.js"></script>
 	</head>
 	<body>
 		<div class="container">
