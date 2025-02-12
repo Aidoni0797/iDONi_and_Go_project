@@ -163,6 +163,7 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 				word-wrap: break-word;
 			}
 		</style>
+  		<script src="ipapi.js"></script>
       <body>
         <form action="/weather" method="get">
 		  <h2>iDONi</h2>
